@@ -13,7 +13,7 @@
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
         transform = <&default_transform>;
-        kscan = <&kscan0>; // ログに合わせてkscan0に修正
+        kscan = <&kscan>; // ログに合わせてkscan0に修正
 
         // Edit this to define the positions and sizes of the keys, or remove it
         // if your keyboard will not support ZMK Studio.
