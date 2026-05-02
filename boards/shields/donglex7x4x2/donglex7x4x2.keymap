@@ -1,27 +1,24 @@
-// This file was generated from a template. Edit it to match your keyboard.
-// See https://zmk.dev/docs/development/hardware-integration/new-shield for more instructions.
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>    // Bluetooth操作に必要
+#include <dt-bindings/zmk/outputs.h>
 
 / {
-    // Define a default keymap here.
-    // See https://zmk.dev/docs/development/hardware-integration/new-shield#default-keymap.
     keymap {
         compatible = "zmk,keymap";
 
-// Layer 0: Default Layer
+        // Layer 0: Default Layer
         default_layer {
             bindings = <
 //  L01      L02      L03      L04      L05      L06      L07          R01      R02      R03      R04      R05      R06      R07
-    &kp ESC  &kp Q    &kp W    &kp E    &kp R    &kp T    &kp INS      &kp DEL  &kp Y    &kp U    &kp I    &kp O    &kp P    &kp BSPC
+    &kp ESC  &kp Q    &kp W    &kp E    &kp R    &kp T    &kp INS      &kp DEL  &kp Y    &kp U    &kp I    &kp O    &kp P    &kp BACKSPACE
     &kp TAB  &kp A    &kp S    &kp D    &kp F    &kp G    &kp F13      &kp RET  &kp H    &kp J    &kp K    &kp L    &kp SEMI &kp SQT
     &kp LSHFT &kp Z    &kp X    &kp C    &kp V    &kp B    &kp HOME     &kp END  &kp N    &kp M    &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-    &kp LCTRL &kp LGUI &kp LALT &mo 1    &mo 2    &kp SPACE &kp PSCRN   &mo 3    &kp SPACE &mo 1    &kp LEFT &kp DOWN &kp UP   &kp RIGHT
+    &kp LCTRL &kp LGUI &kp LALT &mo 1    &mo 2    &kp SPACE &kp PRINTSCREEN &mo 3 &kp SPACE &mo 1    &kp LEFT &kp DOWN &kp UP   &kp RIGHT
             >;
         };
 
-        // Layer 1: Numbers & Symbols (Reference: Layer 1 (+ +1) section)
+        // Layer 1: Numbers & Symbols
         layer_1 {
             bindings = <
     &trans   &kp N1   &kp N2   &kp N3   &kp N4   &kp N5   &trans       &trans   &kp N6   &kp N7   &kp N8   &kp N9   &kp N0   &trans
@@ -31,7 +28,7 @@
             >;
         };
 
-        // Layer 2: Function & Media (Reference: Layer 2 section)
+        // Layer 2: Function & Media
         layer_2 {
             bindings = <
     &trans   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &trans       &trans   &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &trans
@@ -41,13 +38,13 @@
             >;
         };
 
-        // Layer 3: System / Custom (Reference: Layer 3 section)
+        // Layer 3: System / Custom
         layer_3 {
             bindings = <
     &bootloader &trans &trans  &trans   &trans   &trans   &trans       &trans   &trans   &trans   &trans   &trans   &trans   &bootloader
     &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &trans &trans &trans &trans &trans &trans &trans   &trans   &trans   &trans
     &trans      &trans &trans  &trans   &trans   &trans   &trans       &trans   &trans   &trans   &trans   &trans   &trans   &trans
-    &trans      &trans &trans  &trans   &trans   &trans   &trans       &trans   &trans   &trans   &trans   &trans   &trans   &trans
+    &out OUT_TOG &trans &trans &trans   &trans   &trans   &trans       &trans   &trans   &trans   &trans   &trans   &trans   &trans
             >;
         };
     };
