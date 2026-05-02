@@ -1,10 +1,10 @@
 // See https://zmk.dev/docs/development/hardware-integration/physical-layouts
 // for how to configure this.
 
+#include <physical_layouts.dtsi>
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
-    // どのレイアウトを使用するかを指定する設定
     chosen {
         zmk,physical-layout = &default_layout;
     };
@@ -20,7 +20,7 @@
         // https://zmk.dev/docs/development/hardware-integration/physical-layouts#optional-keys-property
         keys
             // Row 0 (Top)
-            // 引数は <幅(w) 高さ(h) x座標(x) y座標(y) 回転(rot) 回転中心x(rx) 回転中心y(ry)>
+            // <width height x y rotation rx ry>
             = <&key_physical_attrs 100 100 0    0   0 0 0> // L01
             , <&key_physical_attrs 100 100 100  0   0 0 0> // L02
             , <&key_physical_attrs 100 100 200  0   0 0 0> // L03
