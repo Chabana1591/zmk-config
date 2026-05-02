@@ -8,9 +8,9 @@
 include:
   - board: nice_nano
     shield: donglex7x4x2_left
-    snippet: studio-rpc-usb-uart studio-rpc-ble
+    snippet: studio-rpc-usb-uart
     artifact-name: donglex7x4x2_left_with_studio
   - board: nice_nano
     shield: donglex7x4x2_right
-    snippet: studio-rpc-usb-uart studio-rpc-ble
+    snippet: studio-rpc-usb-uart
     artifact-name: donglex7x4x2_right_with_studio
