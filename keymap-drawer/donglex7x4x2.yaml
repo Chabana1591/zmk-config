@@ -1,0 +1,287 @@
+layout: {zmk_keyboard: donglex7x4x2}
+layers:
+  default_mac:
+  - ESC
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - '&mac_spot'
+  - DEL
+  - '`'
+  - RSHFT
+  - ''''
+  - '['
+  - ']'
+  - BSPC
+  - TAB
+  - A
+  - S
+  - D
+  - F
+  - G
+  - {t: LANG2, h: adj}
+  - {t: LANG1, h: adj}
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - \
+  - LSHFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - '='
+  - '-'
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - RET
+  - LGUI
+  - LCTRL
+  - LALT
+  - '&mac_scr_sht'
+  - num
+  - meta
+  - SPACE
+  - SPACE
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - RSHFT
+  default_win:
+  - ESC
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - INS
+  - DEL
+  - '`'
+  - RSHFT
+  - ''''
+  - '['
+  - ']'
+  - BSPC
+  - TAB
+  - A
+  - S
+  - D
+  - F
+  - G
+  - {t: INT5, h: adj}
+  - {t: INT4, h: adj}
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - \
+  - LSHFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - '='
+  - '-'
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - RET
+  - LCTRL
+  - LGUI
+  - LALT
+  - PSCRN
+  - num
+  - meta
+  - SPACE
+  - SPACE
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - RSHFT
+  meta:
+  - {t: ▽, type: trans}
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
+  - PG UP
+  - {t: ▽, type: trans}
+  - MUTE
+  - VOL DN
+  - VOL UP
+  - BRI DN
+  - BRI UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - HOME
+  - END
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - PG DN
+  num:
+  - {t: ▽, type: trans}
+  - '7'
+  - '8'
+  - '9'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - KP 7
+  - KP 8
+  - KP 9
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '4'
+  - '5'
+  - '6'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - KP 4
+  - KP 5
+  - KP 6
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - KP 1
+  - KP 2
+  - KP 3
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '0'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - KP 0
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  adj:
+  - '&sys_reset'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BT CLR
+  - '&sel_win_0'
+  - '&sel_win_1'
+  - '&sel_win_2'
+  - '&sel_mac_3'
+  - '&sel_win_4'
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&studio_unlock'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - OUT TOG
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: default_mac, h: toggle}
+  - {t: default_win, h: toggle}
+  - '&tog_ls_off'
+  - '&tog_ls_on'
