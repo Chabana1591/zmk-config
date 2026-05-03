@@ -12,6 +12,34 @@
 #define MAC_SPOT &kp LA(SPACE)
 
 / {
+    macros {
+        sel_win_0: sel_win_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0>, <&to 1>;
+        };
+        sel_win_1: sel_win_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1>, <&to 1>;
+        };
+        sel_win_2: sel_win_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 2>, <&to 1>;
+        };
+        sel_mac_3: sel_mac_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 3>, <&to 0>;
+        };
+        sel_win_4: sel_win_4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 4>, <&to 1>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -64,7 +92,7 @@
             bindings = <
 //  L01          L02          L03          L04          L05          L06          L07          R01          R02          R03          R04          R05          R06          R07
     &sys_reset   &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans
-    &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans
+    &bt BT_CLR   &sel_win_0   &sel_win_1   &sel_win_2   &sel_mac_3   &sel_win_4   &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans
     SU           &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans
     &out OUT_TOG &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &to 0        &to 1        &tog_ls_off  &tog_ls_on
             >;
