@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 // #include <layout_shift.dtsi>    // JIS zmk-layout-shift
+#include <layout_shift.dtsi>    // JIS zmk-layout-shift
 #include <layout_shift_kp_override.dtsi>    // JIS zmk-layout-shift
 
 / {
@@ -61,7 +62,7 @@
     &sys_reset     &trans       &trans       &trans       &trans &trans &trans     &trans &trans &trans    &trans    &trans &trans &trans
     &bt BT_CLR     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &trans &trans &trans     &trans &trans &trans    &trans    &trans &trans &trans
     &studio_unlock &trans       &trans       &trans       &trans &trans &trans     &trans &trans &trans    &trans    &trans &trans &trans
-    &out OUT_TOG   &trans       &trans       &trans       &trans &trans &trans     &trans &trans &trans    &to 0     &to 1  &ls_us &ls_jis
+    &out OUT_TOG   &trans       &trans       &trans       &trans &trans &trans     &trans &trans &trans    &to 0     &to 1  &tog_ls_off &tog_ls_on
             >;
         };
     };
