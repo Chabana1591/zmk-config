@@ -16,11 +16,11 @@ include:
     artifact-name: donglex7x4x2_right_with_studio
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: nice_nano@2//zmk
-    shield: donglex7x4x2_dongle donglex7x4x2_dongle_3c
+    shield: donglex7x4x2_dongle dongle_display donglex7x4x2_dongle_3c
     snippet: studio-rpc-usb-uart
     artifact-name: donglex7x4x2_dongle_oled_3c
   - board: nice_nano@2//zmk
-    shield: donglex7x4x2_dongle donglex7x4x2_dongle_3d
+    shield: donglex7x4x2_dongle dongle_display donglex7x4x2_dongle_3d
     snippet: studio-rpc-usb-uart
     artifact-name: donglex7x4x2_dongle_oled_3d
   - board: nice_nano@2//zmk
