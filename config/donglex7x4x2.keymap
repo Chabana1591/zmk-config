@@ -51,6 +51,7 @@
 
         // Layer 0: Mac Base Layer
         default_mac {
+            display-name = "WIN";
             bindings = <
 //  L01          L02          L03          L04          L05          L06          L07          R01          R02          R03          R04          R05          R06          R07
     &kp ESC      &kp Q        &kp W        &kp E        &kp R        &kp T        &mac_spot    &kp DEL      &kp GRAVE    &kp RSHFT    &kp SQT      &kp LBKT     &kp RBKT     &kp BSPC
@@ -62,6 +63,7 @@
 
         // Layer 1: Win Base Layer
         default_win {
+            display-name = "MAC";
             bindings = <
 //  L01          L02          L03          L04          L05          L06          L07          R01          R02          R03          R04          R05          R06          R07
     &kp ESC      &kp Q        &kp W        &kp E        &kp R        &kp T        &kp INS      &kp DEL      &kp GRAVE    &kp RSHFT    &kp SQT      &kp LBKT     &kp RBKT     &kp BSPC
@@ -73,6 +75,7 @@
 
         // Layer 2: META (Symbols & Function keys)
         layer_meta {
+            display-name = "META";
             bindings = <
 //  L01          L02          L03          L04          L05          L06          L07          R01          R02          R03          R04          R05          R06          R07
     &trans       &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT    &trans       &trans       &kp CARET    &kp AMPS     &kp STAR     &kp LPAR     &kp RPAR     &trans
@@ -84,6 +87,7 @@
 
         // Layer 3: NUM (Numpad)
         layer_num {
+            display-name = "NUM";
             bindings = <
 //  L01          L02          L03          L04          L05          L06          L07          R01          R02          R03          R04          R05          R06          R07
     &trans       &kp N7       &kp N8       &kp N9       &trans       &trans       &trans       &trans       &kp KP_N7    &kp KP_N8    &kp KP_N9    &trans       &trans       &trans
@@ -95,12 +99,13 @@
 
         // Layer 4: ADJ (System / Custom)
         layer_adj {
+            display-name = "ADJ";
             bindings = <
 //  L01          L02          L03          L04          L05          L06          L07          R01          R02          R03          R04          R05          R06          R07
     &sys_reset   &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans
     &bt BT_CLR   &sel_win_0   &sel_win_1   &sel_win_2   &sel_mac_3   &sel_win_4   &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans
     &studio_unlock &trans     &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans
-    &out OUT_TOG &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &to 0        &to 1        &tog_ls_off  &tog_ls_on
+    &out OUT_USB &out OUT_BLE &out OUT_TOG &trans       &trans       &trans       &trans       &trans       &trans       &trans       &to 0        &to 1        &tog_ls_off  &tog_ls_on
             >;
         };
     };
