@@ -51,7 +51,7 @@
 
         // Layer 0: Mac Base Layer
         default_mac {
-            display-name = "WIN";
+            display-name = "MAC";
             bindings = <
 //  L01          L02          L03          L04          L05          L06          L07          R01          R02          R03          R04          R05          R06          R07
     &kp ESC      &kp Q        &kp W        &kp E        &kp R        &kp T        &mac_spot    &kp DEL      &kp GRAVE    &kp RSHFT    &kp SQT      &kp LBKT     &kp RBKT     &kp BSPC
@@ -63,7 +63,7 @@
 
         // Layer 1: Win Base Layer
         default_win {
-            display-name = "MAC";
+            display-name = "WIN";
             bindings = <
 //  L01          L02          L03          L04          L05          L06          L07          R01          R02          R03          R04          R05          R06          R07
     &kp ESC      &kp Q        &kp W        &kp E        &kp R        &kp T        &kp INS      &kp DEL      &kp GRAVE    &kp RSHFT    &kp SQT      &kp LBKT     &kp RBKT     &kp BSPC
