@@ -10,9 +10,19 @@ include:
     shield: donglex7x4x2_left
     snippet: studio-rpc-usb-uart
     artifact-name: donglex7x4x2_left_with_studio
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: nice_nano@2//zmk
     shield: donglex7x4x2_right
     artifact-name: donglex7x4x2_right_with_studio
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+  - board: nice_nano@2//zmk
+    shield: donglex7x4x2_dongle dongle_display donglex7x4x2_dongle_3c
+    snippet: studio-rpc-usb-uart
+    artifact-name: donglex7x4x2_dongle_oled_3c
+  - board: nice_nano@2//zmk
+    shield: donglex7x4x2_dongle dongle_display donglex7x4x2_dongle_3d
+    snippet: studio-rpc-usb-uart
+    artifact-name: donglex7x4x2_dongle_oled_3d
   - board: nice_nano@2//zmk
     shield: settings_reset
     artifact-name: settings_reset

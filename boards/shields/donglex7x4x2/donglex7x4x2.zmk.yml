@@ -22,3 +22,4 @@ requires:
 siblings:
   - donglex7x4x2_left
   - donglex7x4x2_right
+  - donglex7x4x2_dongle
