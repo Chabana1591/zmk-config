@@ -1,10 +1,10 @@
 if SHIELD_DONGLEX7X4X2_ERGO42_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "donglex7x4x2_ergo42"
+    default "donglex7x4x2_Ergo42"
 
 config BT_DEVICE_NAME_MAX
-    default 20
+    default 21
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
@@ -28,10 +28,10 @@ endif # SHIELD_DONGLEX7X4X2_ERGO42_LEFT || SHIELD_DONGLEX7X4X2_ERGO42_RIGHT
 if SHIELD_DONGLEX7X4X2_ERGO42_DONGLE
 
 config ZMK_KEYBOARD_NAME
-    default "donglex7x4x2_ergo42"
+    default "donglex7x4x2_Ergo42"
 
 config BT_DEVICE_NAME_MAX
-    default 20
+    default 21
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
