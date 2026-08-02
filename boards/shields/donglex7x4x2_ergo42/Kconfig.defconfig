@@ -3,6 +3,9 @@ if SHIELD_DONGLEX7X4X2_ERGO42_LEFT
 config ZMK_KEYBOARD_NAME
     default "donglex7x4x2_ergo42"
 
+config BT_DEVICE_NAME_MAX
+    default 20
+
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
@@ -26,6 +29,9 @@ if SHIELD_DONGLEX7X4X2_ERGO42_DONGLE
 
 config ZMK_KEYBOARD_NAME
     default "donglex7x4x2_ergo42"
+
+config BT_DEVICE_NAME_MAX
+    default 20
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
