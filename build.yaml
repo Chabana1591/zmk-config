@@ -6,13 +6,24 @@
 # `artifact-name` to assign a name to distinguish build outputs from each other:
 #
 include:
+  # Ergo42 builds
   - board: nice_nano@2//zmk
-    shield: donglex7x4x2_left
+    shield: donglex7x4x2_ergo42_left
     snippet: studio-rpc-usb-uart
-    artifact-name: donglex7x4x2_left_with_studio
+    artifact-name: donglex7x4x2_ergo42_left_with_studio
   - board: nice_nano@2//zmk
-    shield: donglex7x4x2_right
-    artifact-name: donglex7x4x2_right_with_studio
+    shield: donglex7x4x2_ergo42_right
+    artifact-name: donglex7x4x2_ergo42_right_with_studio
+
+  # Runner3680 builds
+  - board: nice_nano@2//zmk
+    shield: donglex7x4x2_runner_left
+    snippet: studio-rpc-usb-uart
+    artifact-name: donglex7x4x2_runner_left_with_studio
+  - board: nice_nano@2//zmk
+    shield: donglex7x4x2_runner_right
+    artifact-name: donglex7x4x2_runner_right_with_studio
+
   - board: nice_nano@2//zmk
     shield: settings_reset
     artifact-name: settings_reset

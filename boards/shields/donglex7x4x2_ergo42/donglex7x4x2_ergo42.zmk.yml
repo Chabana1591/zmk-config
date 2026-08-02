@@ -1,0 +1,17 @@
+file_format: "1"
+id: donglex7x4x2_ergo42
+name: donglex7x4x2 (Ergo42)
+type: shield
+
+url: https://example.com
+
+features:
+  - keys
+  - studio
+
+requires:
+  - pro_micro
+
+siblings:
+  - donglex7x4x2_ergo42_left
+  - donglex7x4x2_ergo42_right

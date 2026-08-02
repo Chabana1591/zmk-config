@@ -1,0 +1,5 @@
+config SHIELD_DONGLEX7X4X2_RUNNER_LEFT
+    def_bool $(shields_list_contains,donglex7x4x2_runner_left)
+
+config SHIELD_DONGLEX7X4X2_RUNNER_RIGHT
+    def_bool $(shields_list_contains,donglex7x4x2_runner_right)

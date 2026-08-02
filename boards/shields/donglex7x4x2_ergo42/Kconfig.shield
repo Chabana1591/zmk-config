@@ -1,0 +1,5 @@
+config SHIELD_DONGLEX7X4X2_ERGO42_LEFT
+    def_bool $(shields_list_contains,donglex7x4x2_ergo42_left)
+
+config SHIELD_DONGLEX7X4X2_ERGO42_RIGHT
+    def_bool $(shields_list_contains,donglex7x4x2_ergo42_right)
