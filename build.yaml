@@ -6,23 +6,44 @@
 # `artifact-name` to assign a name to distinguish build outputs from each other:
 #
 include:
+  # Ergo42 builds
   - board: nice_nano@2//zmk
-    shield: donglex7x4x2_left
+    shield: donglex7x4x2_ergo42_left
     snippet: studio-rpc-usb-uart
-    artifact-name: donglex7x4x2_left_with_studio
+    artifact-name: donglex7x4x2_ergo42_left_with_studio
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: nice_nano@2//zmk
-    shield: donglex7x4x2_right
-    artifact-name: donglex7x4x2_right_with_studio
+    shield: donglex7x4x2_ergo42_right
+    artifact-name: donglex7x4x2_ergo42_right_with_studio
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: nice_nano@2//zmk
-    shield: donglex7x4x2_dongle dongle_display donglex7x4x2_dongle_3c
+    shield: donglex7x4x2_ergo42_dongle dongle_display donglex7x4x2_ergo42_dongle_3c
     snippet: studio-rpc-usb-uart
-    artifact-name: donglex7x4x2_dongle_oled_3c
+    artifact-name: donglex7x4x2_ergo42_dongle_oled_3c
   - board: nice_nano@2//zmk
-    shield: donglex7x4x2_dongle dongle_display donglex7x4x2_dongle_3d
+    shield: donglex7x4x2_ergo42_dongle dongle_display donglex7x4x2_ergo42_dongle_3d
     snippet: studio-rpc-usb-uart
-    artifact-name: donglex7x4x2_dongle_oled_3d
+    artifact-name: donglex7x4x2_ergo42_dongle_oled_3d
+
+  # Runner3680 builds
+  - board: nice_nano@2//zmk
+    shield: donglex7x4x2_runner_left
+    snippet: studio-rpc-usb-uart
+    artifact-name: donglex7x4x2_runner_left_with_studio
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+  - board: nice_nano@2//zmk
+    shield: donglex7x4x2_runner_right
+    artifact-name: donglex7x4x2_runner_right_with_studio
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+  - board: nice_nano@2//zmk
+    shield: donglex7x4x2_runner_dongle dongle_display donglex7x4x2_runner_dongle_3c
+    snippet: studio-rpc-usb-uart
+    artifact-name: donglex7x4x2_runner_dongle_oled_3c
+  - board: nice_nano@2//zmk
+    shield: donglex7x4x2_runner_dongle dongle_display donglex7x4x2_runner_dongle_3d
+    snippet: studio-rpc-usb-uart
+    artifact-name: donglex7x4x2_runner_dongle_oled_3d
+
   - board: nice_nano@2//zmk
     shield: settings_reset
     artifact-name: settings_reset
