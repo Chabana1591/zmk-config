@@ -1,0 +1,18 @@
+file_format: "1"
+id: donglex7x4x2_runner
+name: donglex7x4x2 (Runner3680)
+type: shield
+
+url: https://example.com
+
+features:
+  - keys
+  - studio
+
+requires:
+  - pro_micro
+
+siblings:
+  - donglex7x4x2_runner_left
+  - donglex7x4x2_runner_right
+  - donglex7x4x2_runner_dongle
